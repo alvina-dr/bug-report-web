@@ -1,10 +1,11 @@
+import styles from './bug-detail-popup.module.css'
+
 export default function BugDetailPopup() {
     return (
     <>
         <div id="bug-popup" style={{display: "flex", 
             flexDirection : "column", 
             margin: "auto", 
-            backgroundColor:"blue", 
             width:"80%", 
             height:"60vh", 
             margin:"auto", 
@@ -27,6 +28,8 @@ export default function BugDetailPopup() {
 
 function CloseBugDetail() 
 {
+    // document.body.style.position = 'static';
+    // document.body.style.overflow = 'auto';
     const elem = document.getElementById("bug-popup");
     elem.style.display = "none";
 }
