@@ -1,5 +1,37 @@
-#bug-popup 
+.BugDetailPopup 
 {
-    background-color: blue, 
+    position: fixed;
+    z-index: 10;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
 }
 
+.BugDetail 
+{
+    background-color: hsla(0, 0%, 4%, 1); 
+    border: 1px solid hsla(0, 0%, 100%, 0.14); 
+    display: flex;
+    flex-direction: column; 
+    margin: auto; 
+    width: 80%;  
+    height: 60vh;
+    margin: auto; 
+    align-items: center; 
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 15;
+}
+
+.BugDetailBackground 
+{
+    position: absolute;
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    border: 0;
+    z-index: 10;
+}

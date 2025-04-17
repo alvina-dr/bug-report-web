@@ -3,25 +3,15 @@ import styles from './bug-detail-popup.module.css'
 export default function BugDetailPopup() {
     return (
     <>
-        <div id="bug-popup" style={{display: "flex", 
-            flexDirection : "column", 
-            margin: "auto", 
-            width:"80%", 
-            height:"60vh", 
-            margin:"auto", 
-            alignItems:"center", 
-            borderRadius:"5px",
-            overflow:"hidden",
-            zIndex:"500",
-            position:"fixed",
-            display:"none"}} >
-            <button style={{alignSelf:"flex-end", justifySelf:"flex-start", position:"absolute"}} onClick={CloseBugDetail}>X</button>
-            <h3>POPUP</h3>
-            <img id="bug-detail-img" src={""} style={{width:"100%", height:"50%",  objectFit:"cover"}}/>
-            <p id="bug-detail-description">description</p>
-            <p id="bug-detail-logs">logs</p>
+        <div id="bug-popup" className={styles.BugDetailPopup}>
+            <button className={styles.BugDetailBackground} onClick={CloseBugDetail}></button>
+            <div className={styles.BugDetail}>
+                <button style={{alignSelf:"flex-end", justifySelf:"flex-start", position:"absolute"}} onClick={CloseBugDetail}>X</button>
+                <img id="bug-detail-img" src={""} style={{width:"100%", height:"50%",  objectFit:"cover"}}/>
+                <p id="bug-detail-description">description</p>
+                <p id="bug-detail-logs">logs</p>
+            </div>
         </div>
-
     </>
   );
 }
