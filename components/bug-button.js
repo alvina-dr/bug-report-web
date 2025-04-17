@@ -1,7 +1,7 @@
 import styles from './bug-button.module.css'
 import Image from "next/image";
 
-export default function BugButton({title, index, description, url}) {
+export default function BugButton({title, index, description, url, logs}) {
 function OpenBugDetail() 
 {
     // document.body.style.position = 'sticky';
@@ -17,7 +17,13 @@ function OpenBugDetail()
     bugDescription.textContent = description;
     
     const bugLogs = document.getElementById("bug-detail-logs");
-    bugLogs.textContent = index;
+    bugLogs.textContent = logs;
+
+    const bugIndex = document.getElementById("bug-detail-index");
+    bugIndex.textContent = index;
+
+    const bugName = document.getElementById("bug-detail-name");
+    bugName.textContent = title;
 }
 
     return (

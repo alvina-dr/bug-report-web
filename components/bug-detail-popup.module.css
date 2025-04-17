@@ -35,3 +35,26 @@
     border: 0;
     z-index: 10;
 }
+
+.BugDetailDescription 
+{
+    width: 100%;
+    color: hsla(0,0%,63%, 1);
+    padding: 10px;
+    text-align: left;
+}
+
+.BugDetailLogs 
+{
+    width: 100%;
+    color: hsla(0,0%,63%, 1);
+    padding: 10px;
+}
+
+.BugDetailName 
+{
+    width: 100%;
+    color: hsla(0, 0%, 93%, 1);
+    font-weight: bold;
+    padding: 10px;
+}

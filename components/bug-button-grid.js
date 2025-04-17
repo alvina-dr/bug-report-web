@@ -29,7 +29,7 @@ export default function BugButtonGrid()
     {files.length > 0 ? (
         files.map((element, index) => {
             console.log(element);
-            return <BugButton key={index} title={element.filename} description={element.content.description} index={index} url={element.content.screenUrl} />;
+            return <BugButton key={index} title={element.filename} description={element.content.description} index={index} url={element.content.screenUrl} logs={element.content.logs} />;
         })
         
         // ((fileName, content, index) => {

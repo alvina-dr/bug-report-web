@@ -8,8 +8,10 @@ export default function BugDetailPopup() {
             <div className={styles.BugDetail}>
                 <button style={{alignSelf:"flex-end", justifySelf:"flex-start", position:"absolute"}} onClick={CloseBugDetail}>X</button>
                 <img id="bug-detail-img" src={""} style={{width:"100%", height:"50%",  objectFit:"cover"}}/>
-                <p id="bug-detail-description">description</p>
-                <p id="bug-detail-logs">logs</p>
+                <p id="bug-detail-index" style={{fontWeight:"bold", margin:"10px", alignSelf:"flex-end", justifySelf:"flex-start", position:"absolute"}}>1</p>
+                <p className={styles.BugDetailName} id="bug-detail-name">name</p>
+                <p className={styles.BugDetailDescription} id="bug-detail-description">description</p>
+                <p className={styles.BugDetailLogs} id="bug-detail-logs">logs</p>
             </div>
         </div>
     </>
