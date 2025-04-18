@@ -24,6 +24,9 @@ function OpenBugDetail()
 
     const bugName = document.getElementById("bug-detail-name");
     bugName.textContent = title;
+
+    document.body.classList.add('overflow-y-hidden');
+    document.documentElement.classList.add("overflow-y-hidden");
 }
 
     return (

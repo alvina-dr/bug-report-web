@@ -20,8 +20,8 @@ export default function BugDetailPopup() {
 
 function CloseBugDetail() 
 {
-    // document.body.style.position = 'static';
-    // document.body.style.overflow = 'auto';
+    document.documentElement.classList.remove("overflow-y-hidden");
+    document.body.classList.remove('overflow-y-hidden');
     const elem = document.getElementById("bug-popup");
     elem.style.display = "none";
 }

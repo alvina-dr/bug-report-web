@@ -41,6 +41,6 @@ a {
   }
 }
 
-:root:has(#bug-popup) {
-  /* overflow:hidden; */
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
