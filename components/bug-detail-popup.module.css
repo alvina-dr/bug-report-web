@@ -29,17 +29,11 @@
 .BugDetailBackground 
 {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.815);
     width: 100vw;
-    height: 110vh;
-    /* overflow: auto; */
+    height: 100vh;
     border: 0;
     z-index: 10;
-    inset: 0px; 
-    background: rgba(15, 15, 15, 0.8);
-    overflow: hidden;
-    overflow-y: scroll;
-    scrollbar-color: rgba(255, 255, 255, 0.2)  rgba(0, 0, 0, 0);
+    background: rgba(15, 15, 15, 0.4);
 }
 
 .BugDetailDescription 
